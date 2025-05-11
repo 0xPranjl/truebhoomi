@@ -1,0 +1,97 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    background-color: #16213e; /* Deep blue for the background to match True Bhoomi's branding */
+}
+
+.agent-plan-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    padding: 2rem;
+    background: linear-gradient(135deg, #16213e, #1a1a2e); /* Updated gradient to match True Bhoomi's theme */
+}
+
+.agent-plan-title {
+    font-size: 3rem;
+    color: #e94560; /* Vibrant accent color for titles */
+    margin-bottom: 3rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: bold;
+}
+
+.agent-plan-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    max-width: 1000px;
+}
+
+@media (min-width: 768px) {
+    .agent-plan-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+.plan-card {
+    background-color: #0f3460; /* Dark blue background for cards */
+    border-radius: 15px;
+    padding: 2rem;
+    text-align: center;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.plan-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 15px 30px rgba(0, 0, 0, 0.4);
+}
+
+.plan-title {
+    font-size: 1.5rem;
+    color: #e94560; /* Using the same vibrant accent color */
+    margin-bottom: 1rem;
+    font-weight: bold;
+}
+
+.plan-details p {
+    color: #a4a4a4; /* Light grey for text for better readability */
+    margin-bottom: 0.5rem;
+}
+
+.plan-price {
+    font-size: 2rem;
+    color: #e94560; /* Accent color for the price */
+    margin-bottom: 1.5rem;
+    font-weight: bold;
+}
+
+.select-plan-btn {
+    background-color: #e94560; /* Vibrant red for call-to-action */
+    color: #fff;
+    padding: 0.75rem 1.5rem;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.select-plan-btn:hover {
+    background-color: #f37284; /* Slightly lighter red on hover for feedback */
+}
+
+.best-value {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: #e94560; /* Highlighting best value with True Bhoomi's accent color */
+    color: #fff;
+    padding: 0.5rem 1rem;
+    font-size: 0.75rem;
+    border-radius: 0 8px 8px 0;
+    font-weight: bold;
+}
